@@ -11,3 +11,5 @@ export const fadeBGDarkMode = trigger("fadeBGDarkMode", [
   transition("* => dark", animate("200ms")),
   transition("dark => *", animate("200ms"))
 ]);
+
+//export const fadeInOutDarkModeIcon = trigger();
