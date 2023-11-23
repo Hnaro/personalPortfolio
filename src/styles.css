@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /*  */
+  --darkModeBG: #15131C;
+  --darkModeCourseFontColor: #302D3C;
+  --darkModeHR_N_Borderline: #1D1A26;
+  --darkModeDefaultProjects_N_SkillsBGColor: #2C2938;
+  --darkModeCreditsToDribbleFontColor: #B7B7B7;
+  --darkModeActiveBtnBGColor: #181621;
+
+  --lightModeDefaultProjects_N_SkillsBGColor: #D7D7D7;
+  --lightModeCourseFontColor: #9E9EA7;
+  --lightModeHR_N_Borderline: #DBDBDE;
+  --lightModeActiveBtnBGColor: #F8F7F4;
+  --lightModeCreditsToDribbleFontColor: #6E6D7A;
+  --lightModeFooterFontColor: #0D0C22;
+  --lightModeToggleLightDarkBGColor: #F8F7F4;
+
+  --leckerli: 'Leckerli One', cursive;
+  --alatsi: 'Alatsi', sans-serif;
+  --inter: 'Inter', sans-serif;;
+}
+
+body {
+  background-color: #FFFFFF;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--inter);
+}

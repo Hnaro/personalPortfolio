@@ -1,0 +1,41 @@
+/* mobile design */
+#headerOuterContainer {
+  position: relative;
+  display: flex;
+  background: transparent;
+  width: 85%;
+  margin: 0 auto;
+}
+#ASLOGOContainer {
+  display: flex;
+  align-items: center;
+  width:90%;
+}
+#ASLOGOContainer h4 {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: var(--leckerli);
+}
+#lightModeIconContainer {
+  display: flex;
+  background-color: var(--lightModeActiveBtnBGColor);
+  width: 40px;
+  align-self: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 100%;
+}
+
+#ASlogo {
+  object-fit:contain;
+  width: 52px;
+}
+#lightModeIcon {
+  margin: auto;
+  object-fit: contain;
+  width: 25px;
+}
+
+#lightModeIconContainer img:hover {
+  cursor: pointer;
+}
