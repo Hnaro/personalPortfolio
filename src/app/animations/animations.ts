@@ -1,10 +1,13 @@
-import { animate, trigger, style, stagger, sequence, state, transition } from '@angular/animations';
+import { animate, transition, trigger, state, stagger, style } from "@angular/animations";
 
 
-export const fadeInDarkLightTheme = trigger("fadeInDarkLightTheme", [
-  state("dark", style({
-
-  })),
-  transition("* <=> dark", animate("250ms"))
-]
-);
+export const fadetextDarkMode = trigger("fadetextDarkMode", [
+  state('dark', style({ "color":"#FFFFFF" })),
+  transition("* => dark", animate("200ms")),
+  transition("dark => *", animate("200ms"))
+]);
+export const fadeBGDarkMode = trigger("fadeBGDarkMode", [
+  state('dark', style({ "background-color":"var(--darkModeBG)" })),
+  transition("* => dark", animate("200ms")),
+  transition("dark => *", animate("200ms"))
+]);

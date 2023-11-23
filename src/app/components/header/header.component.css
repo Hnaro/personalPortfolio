@@ -3,9 +3,10 @@
   position: relative;
   display: flex;
   background: transparent;
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 }
+
 #ASLOGOContainer {
   display: flex;
   align-items: center;
@@ -16,26 +17,33 @@
   font-weight: bolder;
   font-family: var(--leckerli);
 }
-#lightModeIconContainer {
+#ASlogo {
+  object-fit:contain;
+  width: 52px;
+}
+
+#lightdarkModeIcon {
+  margin: auto;
+  object-fit: contain;
+  width: 25px;
+}
+#defaultIcontContainer {
   display: flex;
-  background-color: var(--lightModeActiveBtnBGColor);
   width: 40px;
   align-self: center;
   align-items: center;
   height: 40px;
   border-radius: 100%;
 }
-
-#ASlogo {
-  object-fit:contain;
-  width: 52px;
+.lightModeBGIconContainer {
+  background-color: var(--lightModeActiveBtnBGColor);
 }
-#lightModeIcon {
-  margin: auto;
-  object-fit: contain;
-  width: 25px;
+.darkModeBGIconContainer {
+  background-color: var(--darkModeActiveBtnBGColor);
 }
-
-#lightModeIconContainer img:hover {
+.lightModeIconContainer img:hover {
   cursor: pointer;
 }
+
+
+

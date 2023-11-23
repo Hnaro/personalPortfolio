@@ -1,5 +1,5 @@
-<div id="mainWrapper">
-  <span *ngIf="isDefaultThemeOn">main wrapper BG isdarkThemeOn: {{ isDefaultThemeOn }}</span>
+<div [@fadeBGDarkMode]="colorMode == 'light' ? 'light' : 'dark' " id="mainWrapper">
+  <!-- <span *ngIf="isDefaultThemeOn">main wrapper BG isdarkThemeOn: {{ isDefaultThemeOn }}</span> -->
   <app-header></app-header>
 </div>
 
