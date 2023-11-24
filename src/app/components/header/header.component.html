@@ -2,18 +2,29 @@
   <div id="ASLOGOContainer">
     <img id="ASlogo"
     loading="lazy"
-    src="../../../assets/images/ASLOGO.jpg"
-    alt="">
+    [src]="ASLogo"
+    alt="PersonalWebsite">
     <h4
-    [@fadetextDarkMode]="colorMode == 'light' ? 'light' : 'dark' " >
+    [@fadetextDarkMode]="isDefaultModeOn? 'light' : 'dark' " >
     Hnaro S.
   </h4>
   </div>
-  <div id="defaultIcontContainer" [class.darkModeBGIconContainer]="!isDefaultModeOn" [class.lightModeBGIconContainer]="isDefaultModeOn">
-    <img (click)="onChangeTheme()"
-    id="lightdarkModeIcon"
-    loading="lazy"
-    [src]="src"
-    alt="">
+  <div id="defaultIcontContainer"
+  [class.darkModeBGIconContainer]="!isDefaultModeOn"
+  [class.lightModeBGIconContainer]="isDefaultModeOn">
+    <img @slideLeftLightModeIcon
+    *ngIf="isDefaultModeOn"
+    (click)="onChangeTheme()"
+    id="lightModeIcon"
+    loading="eager"
+    src="../../../assets/images/lightIcon.jpg"
+    alt="WebPortfolio">
+    <img @slideRightLightModeIcon
+    *ngIf="isSlideLeftAnimDone"
+    (click)="onChangeTheme()"
+    id="darkModeIcon"
+    loading="eager"
+    src="../../../assets/images/darkIcon.jpg"
+    alt="WebPortfolio">
   </div>
 </div>

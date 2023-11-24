@@ -2,6 +2,7 @@
 #headerOuterContainer {
   position: relative;
   display: flex;
+  padding-top: 0.4em;
   background: transparent;
   width: 90%;
   margin: 0 auto;
@@ -22,10 +23,15 @@
   width: 52px;
 }
 
-#lightdarkModeIcon {
+#lightModeIcon {
   margin: auto;
   object-fit: contain;
   width: 25px;
+}
+#darkModeIcon {
+  margin: auto;
+  object-fit: contain;
+  width: 15px;
 }
 #defaultIcontContainer {
   display: flex;
@@ -34,6 +40,7 @@
   align-items: center;
   height: 40px;
   border-radius: 100%;
+  overflow: hidden;
 }
 .lightModeBGIconContainer {
   background-color: var(--lightModeActiveBtnBGColor);
