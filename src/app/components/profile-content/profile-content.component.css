@@ -1,0 +1,70 @@
+#profileContainer {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1em;
+  text-align: left;
+}
+#profileContainer img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: 0.5em 0em 1em 0em;
+}
+#profileContainer div {
+  margin-top: 2em;
+}
+#profileContainer div ul {
+  display: flex;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+#profileContainer div ul li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 14px;
+  width: 87px;
+  padding: 0.8em 0.6em 0.8em 0.6em;
+  border-radius: 2em;
+  text-align: center;
+  align-self: center;
+}
+#seeResumeBtn {
+  background-color: transparent;
+  border-radius: 2em;
+  font-size: 14px;
+  color: #000000;
+  padding: 1em 2em 1em 2em;
+  border: 1px solid var(--lightModeHR_N_Borderline);
+  border-collapse: collapse;
+  margin-top: 0.8em;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0em;
+}
+h3, h4 {
+  margin: 0;
+  padding: 0.5em 0em 0.5em 0em;
+  font-size: 16px;
+  font-weight: 300;
+}
+h3 {
+  color: var(--lightModeCourseFontColor);
+}
+
+
+#firstLISpace {
+  margin-right: 0.5em;
+  background-color: var(--lightModeActiveBtnBGColor);
+}
+.li-rightSpace {
+  margin-left: 0.5em;
+}
+
+.project-activeBGStyle {
+  background-color: var(--lightModeActiveBtnBGColor);
+}
