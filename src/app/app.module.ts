@@ -10,6 +10,7 @@ import { MainServiceService } from './services/main-service.service';
 import { MainContentComponent } from './mainComponents/main-content/main-content.component';
 import { ProfileContentComponent } from './components/profile-content/profile-content.component';
 import { OtherInfoComponent } from './components/other-info/other-info.component';
+import { ProjectItemBtnsComponent } from './components/project-item-btns/project-item-btns.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OtherInfoComponent } from './components/other-info/other-info.component
     HeaderComponent,
     MainContentComponent,
     ProfileContentComponent,
-    OtherInfoComponent
+    OtherInfoComponent,
+    ProjectItemBtnsComponent
   ],
   imports: [
     BrowserModule,

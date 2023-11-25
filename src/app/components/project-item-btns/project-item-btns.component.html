@@ -1,0 +1,13 @@
+<div [class.defaultBorderBttm]="!isDarkModeActive"
+[class.darkModeBorderBttm]="isDarkModeActive"
+id="prjctItemBtnsContainer">
+  <div>
+    <ul [class.defaultTxtColor]="!isDarkModeActive"
+    [class.textDarkMode]="isDarkModeActive" >
+      <li [class.isSelectedDefault]="isProjectSelected && !isDarkModeActive"
+      [class.isSelectedDarkMode]="isProjectSelected && isDarkModeActive"><button>Projects</button></li>
+      <li id="margin-Right"><button>ProjectDocs</button></li>
+      <li><button>About</button></li>
+    </ul>
+  </div>
+</div>

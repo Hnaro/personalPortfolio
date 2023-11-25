@@ -11,34 +11,31 @@
   border-radius: 100%;
   margin: 0.5em 0em 1em 0em;
 }
-#profileContainer div {
-  margin-top: 2em;
-}
-#profileContainer div ul {
-  display: flex;
-  width: fit-content;
-  margin: 0;
-  padding: 0;
-}
-#profileContainer div ul li {
-  list-style-type: none;
-  font-weight: 600;
-  font-size: 14px;
-  width: 87px;
-  padding: 0.8em 0.6em 0.8em 0.6em;
-  border-radius: 2em;
-  text-align: center;
-  align-self: center;
-}
 #seeResumeBtn {
   background-color: transparent;
   border-radius: 2em;
   font-size: 14px;
-  color: #000000;
+
   padding: 1em 2em 1em 2em;
-  border: 1px solid var(--lightModeHR_N_Borderline);
+
   border-collapse: collapse;
   margin-top: 0.8em;
+}
+
+.txtColor-DarkMode {
+  color: #FFFFFF;
+}
+.txtCourse-DarkMode {
+  color: var(--darkModeCourseFontColor);
+}
+.defaultBtnStyle {
+  border: 1px solid var(--lightModeHR_N_Borderline);
+  color: var(--lightModeFontColor);
+  font-weight: 500;
+}
+.btnDarkMode {
+  border: 1px solid var(--darkModeHR_N_Borderline);
+  color: #FFFFFF;
 }
 
 h1 {
@@ -54,17 +51,4 @@ h3, h4 {
 }
 h3 {
   color: var(--lightModeCourseFontColor);
-}
-
-
-#firstLISpace {
-  margin-right: 0.5em;
-  background-color: var(--lightModeActiveBtnBGColor);
-}
-.li-rightSpace {
-  margin-left: 0.5em;
-}
-
-.project-activeBGStyle {
-  background-color: var(--lightModeActiveBtnBGColor);
 }

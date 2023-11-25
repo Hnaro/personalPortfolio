@@ -15,7 +15,7 @@
   --lightModeHR_N_Borderline: #DBDBDE;
   --lightModeActiveBtnBGColor: #F8F7F4;
   --lightModeCreditsToDribbleFontColor: #6E6D7A;
-  --lightModeFooterFontColor: #0D0C22;
+  --lightModeFontColor: #0D0C22;
   --lightModeToggleLightDarkBGColor: #F8F7F4;
 
   --leckerli: 'Leckerli One', cursive;
@@ -27,6 +27,9 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 body::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar-track {
   display: none;
 }
 body::-webkit-scrollbar-track {

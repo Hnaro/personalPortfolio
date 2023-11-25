@@ -1,0 +1,55 @@
+#prjctItemBtnsContainer {
+  margin: 1.5em 0em 1.5em 0em;
+  width: 100%;
+  padding: 0em 0em 1.5em 0em;
+}
+
+.defaultBorderBttm {
+  border-bottom: 0.1em solid var(--lightModeHR_N_Borderline);
+}
+.darkModeBorderBttm {
+  border-bottom: 0.1em solid var(--darkModeHR_N_Borderline);
+}
+.textDarkMode li button {
+  color: #FFFFFF;
+}
+.isSelectedDefault button {
+  background-color: var(--lightModeActiveBtnBGColor);
+}
+.isSelectedDarkMode button {
+  background-color: var(--darkModeActiveBtnBGColor);
+  color: #000000;
+}
+.defaultTxtColor li button {
+  color: var(--lightModeFontColor);
+}
+
+
+div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+ul {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 90%;
+}
+li {
+  list-style-type: none;
+  width: 30%;
+}
+
+li button {
+  padding: 0.8em 1.5em 0.8em 1.5em;
+  border-radius: 2em;
+  border: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+#margin-Right {
+  margin-right: 1.5em;
+}
