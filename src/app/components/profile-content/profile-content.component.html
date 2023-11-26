@@ -1,7 +1,7 @@
 <div id="profileContainer">
-  <img src="../../../assets/images/mybannerProfile.jpg" alt="WebPortfolio Profile">
+  <img loading="lazy" src="../../../assets/images/mybannerProfile.jpg" alt="WebPortfolio Profile">
   <h1 [class.txtColor-DarkMode]="isDarkModeActive">Arhon Serrano</h1>
   <h4 [class.txtColor-DarkMode]="isDarkModeActive">Calgary, Alberta</h4>
   <h3 [class.txtCourse-DarkMode]="isDarkModeActive">Web Developer / Graphic Design</h3>
-  <button id="seeResumeBtn" [class.defaultBtnStyle]="!isDarkModeActive" [class.btnDarkMode]="isDarkModeActive">See Resume</button>
+  <button (click)="onClickDownloadResume()" id="seeResumeBtn" [class.defaultBtnStyle]="!isDarkModeActive" [class.btnDarkMode]="isDarkModeActive">See Resume</button>
 </div>

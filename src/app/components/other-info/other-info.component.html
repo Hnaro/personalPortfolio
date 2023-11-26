@@ -1,6 +1,23 @@
 <div id="otherInfoContainer">
-  <button>Web Projects <img src="" alt="" srcset=""></button>
-<!--   <div *ngFor="let item of currentItems">
+  <button [class.defaultbtnStyle]="!isDarkModeActive"
+  [class.darkModeBtnStyle]="isDarkModeActive"
+   (click)="onClickRotateArrow()" >{{ filterLabel }}
+   <img id="arrowIcon" [@rotateArrowIcon]="arrowDownCurrentState == 'pointDown' ? 'pointDown' : 'pointUp' " [src]="src" alt="WebPortfolio">
+  <div id="dropDownContainer"
+  [class.defaultFilterStyleBG]="!isDarkModeActive"
+  [class.darkModeFilterStyleBG]="isDarkModeActive" *ngIf="arrowDownCurrentState == 'pointUp' ">
+      <ul>
+        <!-- replace with buttons inside li -->
+        <li [class.defaultSelectedOPtionBG]="isWebPrjctSelected && !isDarkModeActive"
+        [class.darkModeFilterStyle]="isWebPrjctSelected && isDarkModeActive"
+        (click)="selectFilter(1)" >Web Projects <img *ngIf="isWebPrjctSelected" loading="lazy" [src]="checkIconSrc" alt=""></li>
 
+        <li [class.defaultSelectedOPtionBG]="!isWebPrjctSelected && !isDarkModeActive"
+        [class.darkModeFilterStyle]="!isWebPrjctSelected && isDarkModeActive"
+        (click)="selectFilter(2)">Other Projects <img *ngIf="!isWebPrjctSelected" loading="lazy" [src]="checkIconSrc" alt=""></li>
+      </ul>
+  </div>
+  </button>
+<!--   <div *ngFor="let item of currentItems">
   </div> -->
 </div>

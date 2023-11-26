@@ -28,7 +28,10 @@ export const slideRightLightModeIcon = trigger("slideRightLightModeIcon", [
     )
 ])
 ]);
-/* export const slideRightDarkModeIcon = trigger("slideRightDarkModeIcon", [
-  state("", style({ "transform":"translateX(5px)" })),
-]); */
-//export const fadeInOutDarkModeIcon = trigger();
+// rotate arrowDownicon animation
+export const rotateArrowIcon = trigger("rotateArrowIcon", [
+  state("pointDown", style({ "rotate":"0deg" })),
+  state("pointUp", style({ "rotate":"-180deg"})),
+  transition("pointDown => pointUp", animate("200ms")),
+  transition("pointUp => pointDown", animate("100ms"))
+])

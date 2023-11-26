@@ -15,11 +15,12 @@
   background-color: transparent;
   border-radius: 2em;
   font-size: 14px;
-
   padding: 1em 2em 1em 2em;
-
   border-collapse: collapse;
   margin-top: 0.8em;
+}
+#seeResumeBtn:hover {
+  cursor: pointer;
 }
 
 .txtColor-DarkMode {

@@ -1,0 +1,80 @@
+#otherInfoContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+button {
+  position: relative;
+  border-radius: 0.5em;
+  width: 150px;
+  height: 48px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size:14px;
+}
+
+.defaultbtnStyle {
+  border: 1px solid var(--lightModeHR_N_Borderline);
+  box-shadow: 0.2em 0.2em 0.5em rgb(231, 231, 231);
+  color: #000000;
+}
+.defaultSelectedOPtionBG {
+  background-color: #e7e7e7;
+}
+.darkModeBtnStyle {
+  border: 1px solid var(--darkModeHR_N_Borderline);
+  box-shadow: 0.1em 0.1em 0.5em #16151f;
+  color: rgb(255, 255, 255);
+}
+.darkModeFilterStyle {
+  background-color: #232030;
+  color: white;
+}
+.darkModeFilterStyleBG {
+  background-color: var(--darkModeBG);
+  border: 1px solid var(--darkModeHR_N_Borderline);
+}
+.defaultFilterStyleBG {
+  background-color: #ffffff;
+  border: 1px solid var(--lightModeHR_N_Borderline);
+}
+
+button img {
+  margin-left: 0.5em;
+  object-fit: contain;
+  width: 8px;
+  height: 5px;
+}
+
+#arrowIcon {
+  rotate: -180deg;
+}
+
+
+/* use this for drop down menu style*/
+/* this is just a test*/
+#dropDownContainer ul {
+  width: 100%;
+  padding: 0;
+}
+#dropDownContainer li {
+  font-size: 14px;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  list-style-type: none;
+  height: 45px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  margin-top: 0.3em;
+}
+#dropDownContainer {
+  position: absolute;
+  width: 143px;
+  display: flex;
+  border-radius: 0.5em;
+  transform:translateY(2em) translateX(-0.7em);
+  align-items: center;
+  justify-content: center;
+}

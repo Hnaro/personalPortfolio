@@ -12,4 +12,9 @@ export class ProfileContentComponent implements DoCheck {
   ngDoCheck(): void {
     this.isDarkModeActive = !this.themeService.getisDefaultThemeOn();
   }
+  onClickDownloadResume() {
+    const link = document.createElement('a');
+    link.href = "../../../assets/downloadables/ASResume.pdf";
+    link.click();
+  }
 }

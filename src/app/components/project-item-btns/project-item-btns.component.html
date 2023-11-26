@@ -5,9 +5,19 @@ id="prjctItemBtnsContainer">
     <ul [class.defaultTxtColor]="!isDarkModeActive"
     [class.textDarkMode]="isDarkModeActive" >
       <li [class.isSelectedDefault]="isProjectSelected && !isDarkModeActive"
-      [class.isSelectedDarkMode]="isProjectSelected && isDarkModeActive"><button>Projects</button></li>
-      <li id="margin-Right"><button>ProjectDocs</button></li>
-      <li><button>About</button></li>
+      [class.isSelectedDarkMode]="isProjectSelected && isDarkModeActive">
+      <button (click)="onClickChange(1)" >Projects</button>
+    </li>
+      <li id="margin-Right"
+      [class.isSelectedDefault]="isProjectDocsSelected && !isDarkModeActive"
+      [class.isSelectedDarkMode]="isProjectDocsSelected && isDarkModeActive">
+      <button (click)="onClickChange(2)">ProjectDocs</button>
+    </li>
+      <li
+      [class.isSelectedDefault]="isAboutSelected && !isDarkModeActive"
+      [class.isSelectedDarkMode]="isAboutSelected && isDarkModeActive">
+        <button (click)="onClickChange(3)">About</button>
+      </li>
     </ul>
   </div>
 </div>

@@ -38,7 +38,7 @@ ul {
 }
 li {
   list-style-type: none;
-  width: 30%;
+  width: fit-content;
 }
 
 li button {
@@ -49,7 +49,11 @@ li button {
   font-weight: 600;
   background-color: transparent;
 }
+li button:hover {
+  color: #414141;
+  cursor: pointer;
+}
 
 #margin-Right {
-  margin-right: 1.5em;
+  margin-right: 0.5em;
 }
