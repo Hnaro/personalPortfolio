@@ -21,6 +21,7 @@ export class OtherInfoComponent implements OnInit, DoCheck {
   checkIconSrc: any;
   isWebPrjctSelected: any;
   filterLabel: any;
+
   constructor(private themeService: MainServiceService) {}
   ngDoCheck(): void {
     this.isDarkModeActive = !this.themeService.getisDefaultThemeOn();

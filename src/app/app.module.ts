@@ -11,7 +11,8 @@ import { MainContentComponent } from './mainComponents/main-content/main-content
 import { ProfileContentComponent } from './components/profile-content/profile-content.component';
 import { OtherInfoComponent } from './components/other-info/other-info.component';
 import { ProjectItemBtnsComponent } from './components/project-item-btns/project-item-btns.component';
-
+import { ProjectItemComponent } from './components/project-item/project-item.component';
+import { ProjectsItemContentBoxComponent } from './components/projects-item-content-box/projects-item-content-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,9 @@ import { ProjectItemBtnsComponent } from './components/project-item-btns/project
     MainContentComponent,
     ProfileContentComponent,
     OtherInfoComponent,
-    ProjectItemBtnsComponent
+    ProjectItemBtnsComponent,
+    ProjectItemComponent,
+    ProjectsItemContentBoxComponent
   ],
   imports: [
     BrowserModule,

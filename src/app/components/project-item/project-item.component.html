@@ -1,1 +1,11 @@
-<p>project-item works!</p>
+<div id="projctContainer">
+  <div id="orderedListWrapper">
+    <ol>
+      <li *ngFor="let item of currentItems">
+        <!-- create component for this -->
+        <app-projects-item-content-box [src]="item.projectImage" [itemTitle]="item.projectTitle"></app-projects-item-content-box>
+        <!-- .......... -->
+      </li>
+    </ol>
+  </div>
+</div>

@@ -11,13 +11,18 @@
         <li [class.defaultSelectedOPtionBG]="isWebPrjctSelected && !isDarkModeActive"
         [class.darkModeFilterStyle]="isWebPrjctSelected && isDarkModeActive"
         (click)="selectFilter(1)" >Web Projects <img *ngIf="isWebPrjctSelected" loading="lazy" [src]="checkIconSrc" alt=""></li>
-
         <li [class.defaultSelectedOPtionBG]="!isWebPrjctSelected && !isDarkModeActive"
         [class.darkModeFilterStyle]="!isWebPrjctSelected && isDarkModeActive"
         (click)="selectFilter(2)">Other Projects <img *ngIf="!isWebPrjctSelected" loading="lazy" [src]="checkIconSrc" alt=""></li>
       </ul>
   </div>
   </button>
+  <div id="itemContainer">
+    <ol>
+
+    </ol>
+  </div>
 <!--   <div *ngFor="let item of currentItems">
   </div> -->
+
 </div>

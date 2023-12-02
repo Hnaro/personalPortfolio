@@ -1,5 +1,7 @@
 #mainWrapper {
+  position: relative;
   width: 100%;
+  height: auto;
 }
 
 .darkMode {

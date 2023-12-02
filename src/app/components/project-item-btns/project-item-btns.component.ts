@@ -22,6 +22,7 @@ export class ProjectItemBtnsComponent implements DoCheck, OnInit {
   }
   onClickChange(option: number) {
     this.resetAllSelectedBtns();
+    this.themeService.setSelectedOption(option);
     switch(option) {
       case 1:
         this.isProjectSelected = true;
@@ -32,7 +33,6 @@ export class ProjectItemBtnsComponent implements DoCheck, OnInit {
       case 3:
         this.isAboutSelected = true;
         break;
-
     }
   }
   // resets all selected buttons

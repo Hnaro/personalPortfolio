@@ -1,3 +1,21 @@
-<div id="footerOuterContainer">
- <h1>footer here</h1>
+<div [class.txt-darkModeFont]="isDarkModeActive" id="footerOuterContainer">
+  <h3 [class.h3default]="!isDarkModeActive" [class.h3darkMode]="isDarkModeActive">Other Services & skills</h3>
+  <div id="itemSliderContainer">
+    <!-- item boxes here for displaying skills make it horizontal slide -->
+  </div>
+  <div id="footerOtherInfoContainer">
+    <h2><img id="ASlogo" [src]="src" alt="" srcset="">Hnaro S.</h2>
+    <h4>Follow me on instagram: <img loading="lazy" class="sized-38pxicon" [src]="instagram38PXIconSrc" alt=""></h4>
+    <h4>more info? check my profile on linkdln: <img loading="lazy" class="sized-38pxicon" [src]="linkdln38pxIconSrc" alt="" srcset=""></h4>
+    <div id="socMedIconsContainer">
+      <ul>
+        <li *ngFor="let src of socMedIconSrc" ><img loading="lazy" class="footer-Icons" [src]="src" alt="" srcset=""></li>
+      </ul>
+    </div>
+    <h4 id="inspiredDribbleH4"
+    [class.dribble-FontColor]="!isDarkModeActive"
+    [class.darkModedribble-fColor]="isDarkModeActive">Inspired by Dribble</h4>
+    <h4 [class.dribble-FontColor]="!isDarkModeActive"
+    [class.darkModedribble-fColor]="isDarkModeActive">credits to: dribble.com</h4>
+  </div>
 </div>

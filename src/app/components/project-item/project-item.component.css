@@ -1,0 +1,15 @@
+#projctContainer {
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+}
+#orderedListWrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#orderedListWrapper ol {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
